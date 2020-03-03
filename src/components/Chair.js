@@ -11,10 +11,11 @@ export default function Chair({color}) {
 
 	const clothMaterial = new MeshStandardMaterial({
 		...gltf.scene.children[0].children[0].children[0].children[0].children[0].material,
-		color:color,
+		color
 	});
-	gltf.scene.children[0].children[0].children[0].children[0].children[0].material = clothMaterial;
+
 	gltf.scene.children[0].children[0].children[0].children[0].children[2].material = clothMaterial;
+	gltf.scene.children[0].children[0].children[0].children[0].children[0].material = clothMaterial;
 
 	useFrame(() => (chairMeshGroup.current.rotation.y += 0.01 , chairMeshGroup.current.rotation.x = Math.sin(chairMeshGroup.current.rotation.y)/3));
 	return (

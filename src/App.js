@@ -4,9 +4,7 @@ import Chair from "./components/Chair";
 import ControlButtons from "./components/ControlButtons";
 import styled from "styled-components";
 
-const Container = styled.div`
- height:90vh;
-`;
+const Container = styled.div` height:89vh;`;
 
 function App() {
   const [color, setColor] = useState();

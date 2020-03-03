@@ -10,6 +10,7 @@ const Button = styled.button`
   border: 2px solid palevioletred;
   border-radius: 3px;
 `;
+
 const Wrapper = styled.div`
  display:flex;
  align-items:center;
@@ -30,6 +31,4 @@ export default function ControlButtons({ parentCallback }) {
 			</Button>
 		</Wrapper>
 	)
-
-
 }
